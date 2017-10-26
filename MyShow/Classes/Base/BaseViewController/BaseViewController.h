@@ -2,14 +2,13 @@
 //  BaseViewController.h
 //  DoctorApp
 //
-//  Created by 郭强 on 16/7/23.
-//  Copyright © 2016年 郭强. All rights reserved.
+//  Created by on 16/7/23.
+//  Copyright © 2016年 . All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "NoNetworkView.h"
-#import "UIViewController+ProgressHUDView.h"
-#import <ShareSDK/ShareSDK.h>
+#import <objc/runtime.h>
+#import <objc/message.h>
 
 @interface BaseViewController : UIViewController
 
@@ -27,13 +26,6 @@
  *  @return
  */
 @property (nonatomic,strong)UIButton *rightButton;
-
-/**
- *  错误界面
- */
-@property(nonatomic,strong) NoNetworkView *noNetworkView;
-
-
 
 /**
  *  导航栏返回按钮
@@ -60,12 +52,6 @@
 - (void)popViewControllerAnimated:(BOOL)animated;
 
 /**
- *  直接返回index个指定界面
- *  @return
- */
-- (void)popViewControllerAnimated:(NSInteger)index animated:(BOOL)animated;
-
-/**
  *  返回到指定界面
  *  @param viewController
  *  @param animated
@@ -79,5 +65,4 @@
 
 - (void)showLoginViewController;
 
-- (void)shareText:(NSString *)text withImg:(NSURL *)img withUrl:(NSString *)url withTitle:(NSString *)title SSDKPlatformType:(SSDKPlatformType)type;
 @end

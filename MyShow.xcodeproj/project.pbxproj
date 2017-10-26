@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24E56BAB1F9F1F4D009A616D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E56BA91F9F1F4D009A616D /* BaseViewController.m */; };
+		24E56BAF1F9F1F65009A616D /* JHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E56BAD1F9F1F65009A616D /* JHHomeViewController.m */; };
+		24E56BB01F9F1F65009A616D /* JHHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E56BAE1F9F1F65009A616D /* JHHomeViewController.xib */; };
+		24E56BB31F9F2180009A616D /* libobjc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E56BB21F9F2180009A616D /* libobjc.tbd */; };
+		24E56BB81F9F22F6009A616D /* TurntableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E56BB61F9F22F6009A616D /* TurntableViewController.m */; };
+		24E56BB91F9F22F6009A616D /* TurntableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E56BB71F9F22F6009A616D /* TurntableViewController.xib */; };
+		24E56BC01F9F23D3009A616D /* TurntableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E56BBF1F9F23D3009A616D /* TurntableView.m */; };
 		24FE17E31EA88068006759D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE17E21EA88068006759D9 /* main.m */; };
 		24FE17E61EA88068006759D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE17E51EA88068006759D9 /* AppDelegate.m */; };
 		24FE17E91EA88068006759D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE17E81EA88068006759D9 /* ViewController.m */; };
@@ -35,6 +42,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24E56B9C1F9F12A8009A616D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		24E56B9D1F9F1308009A616D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		24E56BA91F9F1F4D009A616D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		24E56BAA1F9F1F4D009A616D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		24E56BAC1F9F1F65009A616D /* JHHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHHomeViewController.h; sourceTree = "<group>"; };
+		24E56BAD1F9F1F65009A616D /* JHHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHHomeViewController.m; sourceTree = "<group>"; };
+		24E56BAE1F9F1F65009A616D /* JHHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHHomeViewController.xib; sourceTree = "<group>"; };
+		24E56BB21F9F2180009A616D /* libobjc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.tbd; path = usr/lib/libobjc.tbd; sourceTree = SDKROOT; };
+		24E56BB51F9F22F6009A616D /* TurntableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurntableViewController.h; sourceTree = "<group>"; };
+		24E56BB61F9F22F6009A616D /* TurntableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurntableViewController.m; sourceTree = "<group>"; };
+		24E56BB71F9F22F6009A616D /* TurntableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TurntableViewController.xib; sourceTree = "<group>"; };
+		24E56BBE1F9F23D3009A616D /* TurntableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurntableView.h; sourceTree = "<group>"; };
+		24E56BBF1F9F23D3009A616D /* TurntableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurntableView.m; sourceTree = "<group>"; };
 		24FE17DE1EA88068006759D9 /* MyShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FE17E21EA88068006759D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24FE17E41EA88068006759D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E56BB31F9F2180009A616D /* libobjc.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +99,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24E56B971F9F11D1009A616D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24E56BA31F9F1E56009A616D /* Home */,
+				24E56B9B1F9F11EB009A616D /* Configs */,
+				24E56B981F9F11D1009A616D /* Base */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		24E56B981F9F11D1009A616D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				24E56B9F1F9F1654009A616D /* BaseView */,
+				24E56B9E1F9F1643009A616D /* BaseViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		24E56B991F9F11D1009A616D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		24E56B9A1F9F11D1009A616D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				24E56B9C1F9F12A8009A616D /* 1.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		24E56B9B1F9F11EB009A616D /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				24E56B9D1F9F1308009A616D /* PrefixHeader.pch */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		24E56B9E1F9F1643009A616D /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24E56BAA1F9F1F4D009A616D /* BaseViewController.h */,
+				24E56BA91F9F1F4D009A616D /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		24E56B9F1F9F1654009A616D /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		24E56BA31F9F1E56009A616D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				24E56BB41F9F22E8009A616D /* Turntable */,
+				24E56BA51F9F1E79009A616D /* View */,
+				24E56BA41F9F1E70009A616D /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		24E56BA41F9F1E70009A616D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24E56BAC1F9F1F65009A616D /* JHHomeViewController.h */,
+				24E56BAD1F9F1F65009A616D /* JHHomeViewController.m */,
+				24E56BAE1F9F1F65009A616D /* JHHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24E56BA51F9F1E79009A616D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24E56BB11F9F217F009A616D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24E56BB21F9F2180009A616D /* libobjc.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24E56BB41F9F22E8009A616D /* Turntable */ = {
+			isa = PBXGroup;
+			children = (
+				24E56BBD1F9F23C1009A616D /* TurntableView */,
+				24E56BB51F9F22F6009A616D /* TurntableViewController.h */,
+				24E56BB61F9F22F6009A616D /* TurntableViewController.m */,
+				24E56BB71F9F22F6009A616D /* TurntableViewController.xib */,
+			);
+			path = Turntable;
+			sourceTree = "<group>";
+		};
+		24E56BBD1F9F23C1009A616D /* TurntableView */ = {
+			isa = PBXGroup;
+			children = (
+				24E56BBE1F9F23D3009A616D /* TurntableView.h */,
+				24E56BBF1F9F23D3009A616D /* TurntableView.m */,
+			);
+			path = TurntableView;
+			sourceTree = "<group>";
+		};
 		24FE17D51EA88068006759D9 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +219,7 @@
 				24FE17FA1EA88069006759D9 /* MyShowTests */,
 				24FE18051EA88069006759D9 /* MyShowUITests */,
 				24FE17DF1EA88068006759D9 /* Products */,
+				24E56BB11F9F217F009A616D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +236,9 @@
 		24FE17E01EA88068006759D9 /* MyShow */ = {
 			isa = PBXGroup;
 			children = (
+				24E56B971F9F11D1009A616D /* Classes */,
+				24E56B991F9F11D1009A616D /* Common */,
+				24E56B9A1F9F11D1009A616D /* Resource */,
 				24FE17E41EA88068006759D9 /* AppDelegate.h */,
 				24FE17E51EA88068006759D9 /* AppDelegate.m */,
 				24FE17E71EA88068006759D9 /* ViewController.h */,
@@ -207,6 +345,7 @@
 				TargetAttributes = {
 					24FE17DD1EA88068006759D9 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 66R335K49S;
 						ProvisioningStyle = Automatic;
 					};
 					24FE17F61EA88069006759D9 = {
@@ -248,7 +387,9 @@
 			files = (
 				24FE17F11EA88068006759D9 /* LaunchScreen.storyboard in Resources */,
 				24FE17EE1EA88068006759D9 /* Assets.xcassets in Resources */,
+				24E56BB91F9F22F6009A616D /* TurntableViewController.xib in Resources */,
 				24FE17EC1EA88068006759D9 /* Main.storyboard in Resources */,
+				24E56BB01F9F1F65009A616D /* JHHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +414,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E56BAF1F9F1F65009A616D /* JHHomeViewController.m in Sources */,
 				24FE17E91EA88068006759D9 /* ViewController.m in Sources */,
+				24E56BC01F9F23D3009A616D /* TurntableView.m in Sources */,
+				24E56BAB1F9F1F4D009A616D /* BaseViewController.m in Sources */,
 				24FE17E61EA88068006759D9 /* AppDelegate.m in Sources */,
+				24E56BB81F9F22F6009A616D /* TurntableViewController.m in Sources */,
 				24FE17E31EA88068006759D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +567,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 66R335K49S;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyShow/Classes/Configs/PrefixHeader.pch";
 				INFOPLIST_FILE = MyShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hualuoyongheng.MyShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +581,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 66R335K49S;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyShow/Classes/Configs/PrefixHeader.pch";
 				INFOPLIST_FILE = MyShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hualuoyongheng.MyShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +656,7 @@
 				24FE180D1EA88069006759D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24FE180E1EA88069006759D9 /* Build configuration list for PBXNativeTarget "MyShowTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +665,7 @@
 				24FE18101EA88069006759D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24FE18111EA88069006759D9 /* Build configuration list for PBXNativeTarget "MyShowUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +674,7 @@
 				24FE18131EA88069006759D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

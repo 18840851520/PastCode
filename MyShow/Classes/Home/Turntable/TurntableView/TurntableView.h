@@ -8,6 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TurntableView : UIView
+typedef enum : NSUInteger {
+    TurntablePointerRight,
+    TurntablePointerTop,
+    TurntablePointerLeft,
+    TurntablePointerBottom
+} TurntablePointer;
+
+@protocol TurntableViewDelegate<NSObject>
+
+- (void)rotationDidEnd:(NSString *)index;//选中区域
+
+@end
+
+@interface TurntableView : UIView<CAAnimationDelegate>
+
+//所有的描述
+@property (nonatomic, strong) NSArray *titles;
+
+@property (nonatomic, assign) TurntablePointer turntablePointerStyle;
+
+@property (nonatomic, strong) id<TurntableViewDelegate> delegate;
+
+@property (nonatomic, assign) float index;
+
+//开始旋转转盘
+- (void)startRotate;
 
 @end

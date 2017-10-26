@@ -7,8 +7,11 @@
 //
 
 #import "TurntableViewController.h"
+#import "TurntableView.h"
 
 @interface TurntableViewController ()
+
+@property (weak, nonatomic) IBOutlet TurntableView *turntableView;
 
 @end
 
@@ -16,22 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+//    @[@"好吃不如饺子",@"乐速",@"沙县小吃",@"筒骨饭",@"牛肉粉",@"肉蟹煲",@"撸串",@"烧烤",@"火锅",@"一点点"]
+    self.turntableView.titles = @[@"好吃不如饺子",@"乐速",@"沙县小吃",@"筒骨饭",@"牛肉粉",@"肉蟹煲",@"撸串",@"烧烤",@"火锅",@"一点点"];
+    self.turntableView.turntablePointerStyle = TurntablePointerLeft;
+}
+- (IBAction)startRotateAction:(id)sender {
+    [self.turntableView startRotate];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

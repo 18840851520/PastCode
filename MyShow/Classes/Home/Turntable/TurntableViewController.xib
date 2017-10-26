@@ -1,13 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TurntableViewController">
             <connections>
+                <outlet property="turntableView" destination="UFT-dG-8Sm" id="D3O-IQ-C6Y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +20,34 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFT-dG-8Sm" customClass="TurntableView">
+                    <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="b2L-1n-KRi"/>
+                        <constraint firstAttribute="height" constant="250" id="l5d-wR-MEX"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBy-pJ-8oD">
+                    <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.95073187351226807" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startRotateAction:" destination="-1" eventType="touchUpInside" id="7IA-lD-arQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UFT-dG-8Sm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LcY-hK-XJz"/>
+                <constraint firstItem="jBy-pJ-8oD" firstAttribute="trailing" secondItem="UFT-dG-8Sm" secondAttribute="trailing" id="Nrd-6h-FRz"/>
+                <constraint firstItem="UFT-dG-8Sm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RTl-td-ldh"/>
+                <constraint firstItem="jBy-pJ-8oD" firstAttribute="bottom" secondItem="UFT-dG-8Sm" secondAttribute="bottom" id="XCO-Zx-KfR"/>
+                <constraint firstItem="jBy-pJ-8oD" firstAttribute="top" secondItem="UFT-dG-8Sm" secondAttribute="top" id="iw8-cG-Vwn"/>
+                <constraint firstItem="jBy-pJ-8oD" firstAttribute="leading" secondItem="UFT-dG-8Sm" secondAttribute="leading" id="nKt-hM-SkB"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
