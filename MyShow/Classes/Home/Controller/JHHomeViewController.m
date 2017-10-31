@@ -39,9 +39,6 @@
     if (classNameLength > storyBoardLength) {
         suffixClassName = [className substringFromIndex:classNameLength - storyBoardLength];
     }
-    //    else {
-    //        suffixClassName = className;
-    //    }
     
     if ([suffixClassName isEqualToString:@"_UIStoryboard"]) {
         

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TurntableViewController">
             <connections>
+                <outlet property="titlesTF" destination="ROJ-cU-nQe" id="OYE-UV-n1W"/>
                 <outlet property="turntableView" destination="UFT-dG-8Sm" id="D3O-IQ-C6Y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,26 +30,39 @@
                         <constraint firstAttribute="height" constant="250" id="l5d-wR-MEX"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBy-pJ-8oD">
-                    <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
-                    <state key="normal">
-                        <color key="titleColor" white="0.95073187351226807" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROJ-cU-nQe">
+                    <rect key="frame" x="10" y="80" width="355" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
                     <connections>
-                        <action selector="startRotateAction:" destination="-1" eventType="touchUpInside" id="7IA-lD-arQ"/>
+                        <action selector="changeAction:" destination="-1" eventType="editingDidEnd" id="F8d-Ke-8OK"/>
+                        <outlet property="delegate" destination="-1" id="JcU-d9-yac"/>
                     </connections>
-                </button>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointer.png" translatesAutoresizingMaskIntoConstraints="NO" id="MS0-TV-scC">
+                    <rect key="frame" x="163.5" y="184.5" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="DVG-OX-mND"/>
+                        <constraint firstAttribute="height" constant="48" id="y8N-o8-ucm"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="MS0-TV-scC" firstAttribute="top" secondItem="UFT-dG-8Sm" secondAttribute="top" constant="-24" id="8HA-1F-KK2"/>
+                <constraint firstItem="ROJ-cU-nQe" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="60" id="KAu-e7-diN"/>
+                <constraint firstItem="ROJ-cU-nQe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LI0-Dj-wFq"/>
                 <constraint firstItem="UFT-dG-8Sm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LcY-hK-XJz"/>
-                <constraint firstItem="jBy-pJ-8oD" firstAttribute="trailing" secondItem="UFT-dG-8Sm" secondAttribute="trailing" id="Nrd-6h-FRz"/>
                 <constraint firstItem="UFT-dG-8Sm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RTl-td-ldh"/>
-                <constraint firstItem="jBy-pJ-8oD" firstAttribute="bottom" secondItem="UFT-dG-8Sm" secondAttribute="bottom" id="XCO-Zx-KfR"/>
-                <constraint firstItem="jBy-pJ-8oD" firstAttribute="top" secondItem="UFT-dG-8Sm" secondAttribute="top" id="iw8-cG-Vwn"/>
-                <constraint firstItem="jBy-pJ-8oD" firstAttribute="leading" secondItem="UFT-dG-8Sm" secondAttribute="leading" id="nKt-hM-SkB"/>
+                <constraint firstItem="ROJ-cU-nQe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="b46-Zl-yCh"/>
+                <constraint firstItem="MS0-TV-scC" firstAttribute="centerX" secondItem="UFT-dG-8Sm" secondAttribute="centerX" id="fGQ-Sf-Zjw"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ROJ-cU-nQe" secondAttribute="trailing" constant="10" id="gO4-QH-njt"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
+    <resources>
+        <image name="pointer.png" width="48" height="48"/>
+    </resources>
 </document>

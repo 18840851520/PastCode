@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		247DE9191FA200E50005B455 /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 247DE9181FA200E40005B455 /* pointer.png */; };
 		24E56BAB1F9F1F4D009A616D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E56BA91F9F1F4D009A616D /* BaseViewController.m */; };
 		24E56BAF1F9F1F65009A616D /* JHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E56BAD1F9F1F65009A616D /* JHHomeViewController.m */; };
 		24E56BB01F9F1F65009A616D /* JHHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E56BAE1F9F1F65009A616D /* JHHomeViewController.xib */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		247DE9181FA200E40005B455 /* pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer.png; sourceTree = "<group>"; };
 		24E56B9C1F9F12A8009A616D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		24E56B9D1F9F1308009A616D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		24E56BA91F9F1F4D009A616D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		24E56B9A1F9F11D1009A616D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				247DE9181FA200E40005B455 /* pointer.png */,
 				24E56B9C1F9F12A8009A616D /* 1.jpg */,
 			);
 			path = Resource;
@@ -390,6 +393,7 @@
 				24E56BB91F9F22F6009A616D /* TurntableViewController.xib in Resources */,
 				24FE17EC1EA88068006759D9 /* Main.storyboard in Resources */,
 				24E56BB01F9F1F65009A616D /* JHHomeViewController.xib in Resources */,
+				247DE9191FA200E50005B455 /* pointer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

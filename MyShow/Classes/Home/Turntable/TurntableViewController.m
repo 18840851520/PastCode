@@ -9,9 +9,12 @@
 #import "TurntableViewController.h"
 #import "TurntableView.h"
 
-@interface TurntableViewController ()
+@interface TurntableViewController ()<TurntableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet TurntableView *turntableView;
+@property (weak, nonatomic) IBOutlet UILabel *lotteryLB;
+@property (weak, nonatomic) IBOutlet UITextField *titlesTF;
+@property (nonatomic, strong) NSMutableArray *titlesArray;
 
 @end
 
@@ -20,11 +23,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    @[@"好吃不如饺子",@"乐速",@"沙县小吃",@"筒骨饭",@"牛肉粉",@"肉蟹煲",@"撸串",@"烧烤",@"火锅",@"一点点"]
-    self.turntableView.titles = @[@"好吃不如饺子",@"乐速",@"沙县小吃",@"筒骨饭",@"牛肉粉",@"肉蟹煲",@"撸串",@"烧烤",@"火锅",@"一点点"];
-    self.turntableView.turntablePointerStyle = TurntablePointerLeft;
+    self.titlesArray = [NSMutableArray arrayWithArray:@[@"撸串",@"烧烤",@"自助烧烤",@"自助火锅",@"麻辣香锅",@"熔鱼"]];
+    self.titlesTF.text = [self.titlesArray componentsJoinedByString:@","];
+    self.turntableView.titles = self.titlesArray.mutableCopy;
+    self.turntableView.turntablePointerStyle = TurntablePointerTop;
+    self.turntableView.delegate = self;
+}
+- (IBAction)changeAction:(UITextField *)sender {
+    NSString *str = sender.text;
+    NSRange range = [str rangeOfString:@"，"];
+    if (range.location != NSNotFound) {
+        sender.text = [str stringByReplacingOccurrencesOfString:@"，" withString:@","];
+    }
+    self.titlesArray = [NSMutableArray arrayWithArray:[sender.text componentsSeparatedByString:@","]];
+    self.turntableView.titles = self.titlesArray.mutableCopy;
 }
 - (IBAction)startRotateAction:(id)sender {
-    [self.turntableView startRotate];
+}
+- (void)rotationDidEnd:(NSString *)index{
+    self.lotteryLB.text = [self.turntableView.titles objectAtIndex:index.integerValue];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 typedef enum : NSUInteger {
-    TurntablePointerRight,
+    TurntablePointerRight,//default.指针在右
     TurntablePointerTop,
     TurntablePointerLeft,
     TurntablePointerBottom
@@ -25,7 +25,7 @@ typedef enum : NSUInteger {
 
 //所有的描述
 @property (nonatomic, strong) NSArray *titles;
-
+//指针位置
 @property (nonatomic, assign) TurntablePointer turntablePointerStyle;
 
 @property (nonatomic, strong) id<TurntableViewDelegate> delegate;
