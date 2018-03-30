@@ -23,6 +23,16 @@
 		24FE17F11EA88068006759D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FE17EF1EA88068006759D9 /* LaunchScreen.storyboard */; };
 		24FE17FC1EA88069006759D9 /* MyShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE17FB1EA88069006759D9 /* MyShowTests.m */; };
 		24FE18071EA88069006759D9 /* MyShowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE18061EA88069006759D9 /* MyShowUITests.m */; };
+		2ED12387203FF39400A82C36 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED12385203FF39400A82C36 /* AboutMeViewController.m */; };
+		2ED12388203FF39400A82C36 /* AboutMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED12386203FF39400A82C36 /* AboutMeViewController.xib */; };
+		2ED1238B203FF5F500A82C36 /* Zhangjh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1238A203FF5F500A82C36 /* Zhangjh.m */; };
+		2ED48547206A3E66005A78A8 /* ZJHAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED48546206A3E66005A78A8 /* ZJHAlertViewController.m */; };
+		2ED48FF9206DCFD100B92093 /* BluetoothEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED48FF7206DCFD100B92093 /* BluetoothEncryption.m */; };
+		2ED48FFC206DCFDB00B92093 /* ZBlueToothTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED48FFB206DCFDB00B92093 /* ZBlueToothTools.m */; };
+		2ED48FFF206DD05D00B92093 /* YMBlueToothTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED48FFD206DD05D00B92093 /* YMBlueToothTool.m */; };
+		2ED49003206DD3C200B92093 /* BlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED49001206DD3C200B92093 /* BlueToothViewController.m */; };
+		2ED49004206DD3C200B92093 /* BlueToothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED49002206DD3C200B92093 /* BlueToothViewController.xib */; };
+		2ED49008206DD95F00B92093 /* DefineConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED49007206DD95F00B92093 /* DefineConstant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +83,24 @@
 		24FE18021EA88069006759D9 /* MyShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FE18061EA88069006759D9 /* MyShowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyShowUITests.m; sourceTree = "<group>"; };
 		24FE18081EA88069006759D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ED12384203FF39400A82C36 /* AboutMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		2ED12385203FF39400A82C36 /* AboutMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		2ED12386203FF39400A82C36 /* AboutMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutMeViewController.xib; sourceTree = "<group>"; };
+		2ED12389203FF5F500A82C36 /* Zhangjh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zhangjh.h; sourceTree = "<group>"; };
+		2ED1238A203FF5F500A82C36 /* Zhangjh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zhangjh.m; sourceTree = "<group>"; };
+		2ED48545206A3E66005A78A8 /* ZJHAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJHAlertViewController.h; sourceTree = "<group>"; };
+		2ED48546206A3E66005A78A8 /* ZJHAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJHAlertViewController.m; sourceTree = "<group>"; };
+		2ED48FF7206DCFD100B92093 /* BluetoothEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothEncryption.m; sourceTree = "<group>"; };
+		2ED48FF8206DCFD100B92093 /* BluetoothEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothEncryption.h; sourceTree = "<group>"; };
+		2ED48FFA206DCFDB00B92093 /* ZBlueToothTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBlueToothTools.h; sourceTree = "<group>"; };
+		2ED48FFB206DCFDB00B92093 /* ZBlueToothTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBlueToothTools.m; sourceTree = "<group>"; };
+		2ED48FFD206DD05D00B92093 /* YMBlueToothTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMBlueToothTool.m; sourceTree = "<group>"; };
+		2ED48FFE206DD05D00B92093 /* YMBlueToothTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMBlueToothTool.h; sourceTree = "<group>"; };
+		2ED49000206DD3C200B92093 /* BlueToothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueToothViewController.h; sourceTree = "<group>"; };
+		2ED49001206DD3C200B92093 /* BlueToothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueToothViewController.m; sourceTree = "<group>"; };
+		2ED49002206DD3C200B92093 /* BlueToothViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlueToothViewController.xib; sourceTree = "<group>"; };
+		2ED49006206DD95F00B92093 /* DefineConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineConstant.h; sourceTree = "<group>"; };
+		2ED49007206DD95F00B92093 /* DefineConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineConstant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,17 +142,10 @@
 		24E56B981F9F11D1009A616D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				24E56B9F1F9F1654009A616D /* BaseView */,
+				2ED49005206DD95500B92093 /* base */,
 				24E56B9E1F9F1643009A616D /* BaseViewController */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		24E56B991F9F11D1009A616D /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		24E56B9A1F9F11D1009A616D /* Resource */ = {
@@ -153,16 +174,12 @@
 			path = BaseViewController;
 			sourceTree = "<group>";
 		};
-		24E56B9F1F9F1654009A616D /* BaseView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseView;
-			sourceTree = "<group>";
-		};
 		24E56BA31F9F1E56009A616D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2ED48FF6206DCFAA00B92093 /* BlueTooth */,
+				2ED48544206A3E3F005A78A8 /* AlertController */,
+				2ED12383203FF36400A82C36 /* AboutMe */,
 				24E56BB41F9F22E8009A616D /* Turntable */,
 				24E56BA51F9F1E79009A616D /* View */,
 				24E56BA41F9F1E70009A616D /* Controller */,
@@ -240,7 +257,6 @@
 			isa = PBXGroup;
 			children = (
 				24E56B971F9F11D1009A616D /* Classes */,
-				24E56B991F9F11D1009A616D /* Common */,
 				24E56B9A1F9F11D1009A616D /* Resource */,
 				24FE17E41EA88068006759D9 /* AppDelegate.h */,
 				24FE17E51EA88068006759D9 /* AppDelegate.m */,
@@ -279,6 +295,52 @@
 				24FE18081EA88069006759D9 /* Info.plist */,
 			);
 			path = MyShowUITests;
+			sourceTree = "<group>";
+		};
+		2ED12383203FF36400A82C36 /* AboutMe */ = {
+			isa = PBXGroup;
+			children = (
+				2ED12384203FF39400A82C36 /* AboutMeViewController.h */,
+				2ED12385203FF39400A82C36 /* AboutMeViewController.m */,
+				2ED12386203FF39400A82C36 /* AboutMeViewController.xib */,
+				2ED12389203FF5F500A82C36 /* Zhangjh.h */,
+				2ED1238A203FF5F500A82C36 /* Zhangjh.m */,
+			);
+			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		2ED48544206A3E3F005A78A8 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				2ED48545206A3E66005A78A8 /* ZJHAlertViewController.h */,
+				2ED48546206A3E66005A78A8 /* ZJHAlertViewController.m */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+		2ED48FF6206DCFAA00B92093 /* BlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				2ED48FFE206DD05D00B92093 /* YMBlueToothTool.h */,
+				2ED48FFD206DD05D00B92093 /* YMBlueToothTool.m */,
+				2ED48FFA206DCFDB00B92093 /* ZBlueToothTools.h */,
+				2ED48FFB206DCFDB00B92093 /* ZBlueToothTools.m */,
+				2ED48FF8206DCFD100B92093 /* BluetoothEncryption.h */,
+				2ED48FF7206DCFD100B92093 /* BluetoothEncryption.m */,
+				2ED49000206DD3C200B92093 /* BlueToothViewController.h */,
+				2ED49001206DD3C200B92093 /* BlueToothViewController.m */,
+				2ED49002206DD3C200B92093 /* BlueToothViewController.xib */,
+			);
+			path = BlueTooth;
+			sourceTree = "<group>";
+		};
+		2ED49005206DD95500B92093 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				2ED49006206DD95F00B92093 /* DefineConstant.h */,
+				2ED49007206DD95F00B92093 /* DefineConstant.m */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,8 +451,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24FE17F11EA88068006759D9 /* LaunchScreen.storyboard in Resources */,
+				2ED49004206DD3C200B92093 /* BlueToothViewController.xib in Resources */,
 				24FE17EE1EA88068006759D9 /* Assets.xcassets in Resources */,
 				24E56BB91F9F22F6009A616D /* TurntableViewController.xib in Resources */,
+				2ED12388203FF39400A82C36 /* AboutMeViewController.xib in Resources */,
 				24FE17EC1EA88068006759D9 /* Main.storyboard in Resources */,
 				24E56BB01F9F1F65009A616D /* JHHomeViewController.xib in Resources */,
 				247DE9191FA200E50005B455 /* pointer.png in Resources */,
@@ -418,12 +482,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED48FF9206DCFD100B92093 /* BluetoothEncryption.m in Sources */,
+				2ED48547206A3E66005A78A8 /* ZJHAlertViewController.m in Sources */,
 				24E56BAF1F9F1F65009A616D /* JHHomeViewController.m in Sources */,
+				2ED48FFF206DD05D00B92093 /* YMBlueToothTool.m in Sources */,
 				24FE17E91EA88068006759D9 /* ViewController.m in Sources */,
+				2ED49003206DD3C200B92093 /* BlueToothViewController.m in Sources */,
 				24E56BC01F9F23D3009A616D /* TurntableView.m in Sources */,
 				24E56BAB1F9F1F4D009A616D /* BaseViewController.m in Sources */,
 				24FE17E61EA88068006759D9 /* AppDelegate.m in Sources */,
 				24E56BB81F9F22F6009A616D /* TurntableViewController.m in Sources */,
+				2ED12387203FF39400A82C36 /* AboutMeViewController.m in Sources */,
+				2ED48FFC206DCFDB00B92093 /* ZBlueToothTools.m in Sources */,
+				2ED1238B203FF5F500A82C36 /* Zhangjh.m in Sources */,
+				2ED49008206DD95F00B92093 /* DefineConstant.m in Sources */,
 				24FE17E31EA88068006759D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
