@@ -1,6 +1,5 @@
 //
 //  YMBlueToothTool.m
-//  fmyqApp
 //
 //  Created by iOS on 2017/7/19.
 //  Copyright © 2017年 qixiangnet. All rights reserved.

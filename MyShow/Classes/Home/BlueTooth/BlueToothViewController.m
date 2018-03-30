@@ -24,10 +24,12 @@
     self.blueTools = [[ZBlueToothTools alloc] init];
     self.blueTools.delegate = self;
     
+    //连接mac地址为 78a50457f38b|| 78:a5:04:57:f3:8b 蓝牙
     [self.blueTools connectBlueToothWithMACAdress:@"78a50457f38b"];
 }
 - (void)blueToothConnectDeviceStated:(BlueToothState)state{
     if(state == BlueToothStateNotify){
+        //获取蓝牙特征值后发送指令
         [self.blueTools sendValue:@"a1b10203ec000402010100010106" AndBlock:nil];
     }
 }
