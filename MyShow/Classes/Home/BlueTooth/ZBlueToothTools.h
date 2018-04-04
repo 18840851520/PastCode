@@ -38,11 +38,13 @@ typedef void(^BlueToothWriteBlock)(BOOL writeSuccess);
 
 @optional
 /*
+ 当前蓝牙的连接状态
  * @param       state 蓝牙状态
  */
 - (void)blueToothConnectDeviceStated:(BlueToothState)state;
 
 /*
+ 蓝牙写入状态
  * @param       state 读写状态
  */
 - (void)blueToothWriteStatus:(BOOL)isSuccess;
