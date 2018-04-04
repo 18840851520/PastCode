@@ -29,6 +29,10 @@
     self.turntableView.turntablePointerStyle = TurntablePointerTop;
     self.turntableView.delegate = self;
 }
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
+}
 - (IBAction)changeAction:(UITextField *)sender {
     NSString *str = sender.text;
     NSRange range = [str rangeOfString:@"，"];
