@@ -177,6 +177,7 @@
 		24E56BA31F9F1E56009A616D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2E155A2220745E8A00A950DD /* LoadingAnimation */,
 				2ED48FF6206DCFAA00B92093 /* BlueTooth */,
 				2ED48544206A3E3F005A78A8 /* AlertController */,
 				2ED12383203FF36400A82C36 /* AboutMe */,
@@ -295,6 +296,13 @@
 				24FE18081EA88069006759D9 /* Info.plist */,
 			);
 			path = MyShowUITests;
+			sourceTree = "<group>";
+		};
+		2E155A2220745E8A00A950DD /* LoadingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoadingAnimation;
 			sourceTree = "<group>";
 		};
 		2ED12383203FF36400A82C36 /* AboutMe */ = {

@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _mySelf.name = @"张剑华";
+    _mySelf.name = @"划落永恒";
     _mySelf.gender = @"男";
     _mySelf.workExperience = @"2015.7-2018年";
     _mySelf.birthday = @"1993-6-25";
