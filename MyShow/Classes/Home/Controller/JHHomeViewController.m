@@ -9,6 +9,7 @@
 #import "JHHomeViewController.h"
 #import "TurntableViewController.h"
 #import "BlueToothViewController.h"
+#import "AnimationViewController.h"
 
 @interface JHHomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -21,8 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titles = @[@"转盘",@"蓝牙"];
-    self.classNames = @[@"TurntableViewController",@"BlueToothViewController"];
+    self.titles = @[@"转盘",@"蓝牙",@"动画"];
+    self.classNames = @[@"TurntableViewController",@"BlueToothViewController",@"AnimationViewController"];
 }
 #pragma mark delegate & datasource
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
