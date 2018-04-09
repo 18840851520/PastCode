@@ -23,6 +23,7 @@
 
 @property (nonatomic, strong) UIFont *minFont;
 
+@property (nonatomic, assign) BOOL isRunning;
 /*
  显示loadingLabel动画
  *  params cgColor (UIColor *).cgcolor的数组

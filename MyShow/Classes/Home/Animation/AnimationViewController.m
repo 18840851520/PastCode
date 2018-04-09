@@ -21,7 +21,7 @@
     LoadingLabel *loading = [[LoadingLabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 40)];
     loading.textColor = [UIColor blueColor];
     [self.view addSubview:loading];
-    loading.text = @"loading...";
+    loading.text = @"loadin...;
     [loading showLoadingView:@[(__bridge id)[[UIColor greenColor] colorWithAlphaComponent:0.3].CGColor,
                                (__bridge id)[UIColor yellowColor].CGColor,
                                (__bridge id)[[UIColor yellowColor] colorWithAlphaComponent:0.3].CGColor]];

@@ -54,24 +54,34 @@ static int currentIndex = 0;
     // 将graLayer设置成textLabel的遮罩
     self.layer.mask = graLayer;
 }
-
+- (void)setIsRunning:(BOOL)isRunning{
+    _isRunning = isRunning;
+    if(self.loadingAnimationTimer){
+        [self.loadingAnimationTimer invalidate];
+        [self.mutableAttText addAttribute:NSFontAttributeName value:self.minFont range:NSMakeRange(0, self.text.length)];
+    }
+}
 - (void)loadingTextFontChange{
+    if(self.text.length == 0){
+        return;
+    }
     if(!self.mutableAttText){
         self.mutableAttText = [[NSMutableAttributedString alloc] initWithString:self.text];
     }
     [self.mutableAttText addAttribute:NSFontAttributeName value:self.minFont range:NSMakeRange(0, self.text.length)];
-    NSLog(@"current = %d,%ld,%f",currentIndex,self.amplificationLength,self.font.pointSize);
+//    NSLog(@"current = %d,%ld,%f",currentIndex,self.amplificationLength,self.font.pointSize);
     if(currentIndex == 0){
         [self.mutableAttText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:self.maxRightlificationFont] range:NSMakeRange(currentIndex, self.amplificationLength)];
     }else if(currentIndex == 1){
-        [self.mutableAttText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:self.maxAmplificationFont] range:NSMakeRange(currentIndex-1, self.amplificationLength)];
-        [self.mutableAttText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:self.maxRightlificationFont] range:NSMakeRange(currentIndex, self.amplificationLength)];
+        if(self.text.length == 1){
+            [self.mutableAttText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:self.maxAmplificationFont] range:NSMakeRange(currentIndex-1, self.amplificationLength)];
+        }else{
+            [self.mutableAttText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:self.maxAmplificationFont] range:NSMakeRange(currentIndex-1, self.amplificationLength)];
+            [self.mutableAttText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:self.maxRightlificationFont] range:NSMakeRange(currentIndex, self.amplificationLength)];
+        }
     }else if(currentIndex == self.text.length){
         [self.mutableAttText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:self.maxLeftAmplificationFont] range:NSMakeRange(currentIndex-2, self.amplificationLength)];
         [self.mutableAttText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:self.maxAmplificationFont] range:NSMakeRange(currentIndex-1, self.amplificationLength)];
-        if(self.text.length < 2){
-            currentIndex = 0;
-        }
     }
 //    else if(currentIndex == self.text.length+1 && self.text.length >= 2){
 //        [self.mutableAttText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:self.maxLeftAmplificationFont] range:NSMakeRange(currentIndex-2, self.amplificationLength)];
