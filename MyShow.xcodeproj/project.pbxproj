@@ -26,6 +26,7 @@
 		2E155A2D2079A58000A950DD /* LoadingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E155A2C2079A58000A950DD /* LoadingLabel.m */; };
 		2E155A312079A59800A950DD /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E155A2F2079A59800A950DD /* AnimationViewController.m */; };
 		2E155A322079A59800A950DD /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E155A302079A59800A950DD /* AnimationViewController.xib */; };
+		2E155A35207B048C00A950DD /* ZLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E155A34207B048C00A950DD /* ZLoadingView.m */; };
 		2ED12387203FF39400A82C36 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED12385203FF39400A82C36 /* AboutMeViewController.m */; };
 		2ED12388203FF39400A82C36 /* AboutMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED12386203FF39400A82C36 /* AboutMeViewController.xib */; };
 		2ED1238B203FF5F500A82C36 /* Zhangjh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1238A203FF5F500A82C36 /* Zhangjh.m */; };
@@ -91,6 +92,8 @@
 		2E155A2E2079A59800A950DD /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		2E155A2F2079A59800A950DD /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		2E155A302079A59800A950DD /* AnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
+		2E155A33207B048C00A950DD /* ZLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLoadingView.h; sourceTree = "<group>"; };
+		2E155A34207B048C00A950DD /* ZLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLoadingView.m; sourceTree = "<group>"; };
 		2ED12384203FF39400A82C36 /* AboutMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		2ED12385203FF39400A82C36 /* AboutMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		2ED12386203FF39400A82C36 /* AboutMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutMeViewController.xib; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 		2E155A2220745E8A00A950DD /* LoadingAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				2E155A33207B048C00A950DD /* ZLoadingView.h */,
+				2E155A34207B048C00A950DD /* ZLoadingView.m */,
 			);
 			path = LoadingAnimation;
 			sourceTree = "<group>";
@@ -522,6 +527,7 @@
 				2E155A2D2079A58000A950DD /* LoadingLabel.m in Sources */,
 				24E56BAB1F9F1F4D009A616D /* BaseViewController.m in Sources */,
 				2E155A312079A59800A950DD /* AnimationViewController.m in Sources */,
+				2E155A35207B048C00A950DD /* ZLoadingView.m in Sources */,
 				24FE17E61EA88068006759D9 /* AppDelegate.m in Sources */,
 				24E56BB81F9F22F6009A616D /* TurntableViewController.m in Sources */,
 				2ED12387203FF39400A82C36 /* AboutMeViewController.m in Sources */,

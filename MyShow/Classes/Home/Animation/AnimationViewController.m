@@ -8,6 +8,7 @@
 
 #import "AnimationViewController.h"
 #import "LoadingLabel.h"
+#import "ZLoadingView.h"
 
 @interface AnimationViewController ()
 
@@ -25,6 +26,11 @@
     [loading showLoadingView:@[(__bridge id)[[UIColor greenColor] colorWithAlphaComponent:0.3].CGColor,
                                (__bridge id)[UIColor yellowColor].CGColor,
                                (__bridge id)[[UIColor yellowColor] colorWithAlphaComponent:0.3].CGColor]];
+    
+    ZLoadingView *loadingView = [[ZLoadingView alloc] initWithFrame:CGRectMake(50, 50, 80, 80)];
+    loadingView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    [loadingView showBlueToothConnecting:self.view];
+    [self.view addSubview:loadingView];
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
