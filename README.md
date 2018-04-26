@@ -4,3 +4,4 @@ MyShow
 3.动画
 -1.loadingView,
 -2.蓝牙动画效果,
+https://upload-images.jianshu.io/upload_images/8112154-e1931faba7b5cc0d.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/299

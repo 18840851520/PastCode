@@ -35,6 +35,7 @@ static NSInteger circle = 6;
     rotationAnimation.fillMode = kCAFillModeForwards;
     rotationAnimation.delegate = self;
     [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+    
 }
 #pragma mark 动画停止
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
