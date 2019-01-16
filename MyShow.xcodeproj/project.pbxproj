@@ -485,7 +485,7 @@
 				TargetAttributes = {
 					24FE17DD1EA88068006759D9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 66R335K49S;
+						DevelopmentTeam = 3RL239SV7K;
 						ProvisioningStyle = Automatic;
 					};
 					24FE17F61EA88069006759D9 = {
@@ -750,7 +750,7 @@
 			baseConfigurationReference = 154FE35A5E74CD433880766C /* Pods-MyShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 66R335K49S;
+				DEVELOPMENT_TEAM = 3RL239SV7K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyShow/Classes/Configs/PrefixHeader.pch";
 				INFOPLIST_FILE = MyShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -765,7 +765,7 @@
 			baseConfigurationReference = 383D2F96DD2A0DEA4470E40D /* Pods-MyShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 66R335K49S;
+				DEVELOPMENT_TEAM = 3RL239SV7K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyShow/Classes/Configs/PrefixHeader.pch";
 				INFOPLIST_FILE = MyShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
