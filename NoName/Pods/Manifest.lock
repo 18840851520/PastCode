@@ -1,0 +1,26 @@
+PODS:
+  - FLEX (2.4.0)
+  - GPUImage (0.1.7)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - FLEX
+  - GPUImage
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FLEX
+    - GPUImage
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: 936f669e4be9a636bb722279d4b206ed03adfedf
+
+COCOAPODS: 1.5.3
