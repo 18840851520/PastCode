@@ -219,5 +219,10 @@ static int limitTime = 0;
         [peripheral discoverCharacteristics:nil forService:service];
     }
 }
-
+#pragma mark - 蓝牙接收数据
+- (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(nonnull CBCharacteristic *)characteristic error:(nullable NSError *)error{
+    if ([self.delegate respondsToSelector:@selector(blueToothUpdateForCharacteristicValue:withError:)]) {
+        [self.delegate blueToothUpdateForCharacteristicValue:characteristic.value withError:error];
+    }
+}
 @end

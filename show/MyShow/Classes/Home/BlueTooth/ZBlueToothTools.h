@@ -48,6 +48,11 @@ typedef void(^BlueToothWriteBlock)(BOOL writeSuccess);
  * @param       state 读写状态
  */
 - (void)blueToothWriteStatus:(BOOL)isSuccess;
+/*
+ 蓝牙数据接收
+ * @param data二进制数据 error 错误
+ */
+- (void)blueToothUpdateForCharacteristicValue:(NSData *)data withError:(NSError *)error;
 
 @end
 
